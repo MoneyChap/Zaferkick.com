@@ -1,101 +1,107 @@
-import React, { useState } from "react";
-import styles from "./OfferItem.module.css";
+import React, { useState, useId } from "react";
 import { Link } from "react-router-dom";
+import styles from "./OfferItem.module.css";
 
-const OfferItem = ({ img, casinoHook, casinoBonuses, link, tag }) => {
+const OfferItem = ({
+    img,
+    casinoHook = "Over 9,000 games to choose from",
+    casinoBonuses = [
+        "100 free spins (no deposit)",
+        "150% up to $1,000",
+        "25% free bet up to $100",
+    ],
+    link = "/",
+    reviewTitle = "Casino Joy review",
+}) => {
     const [open, setOpen] = useState(false);
+    const detailsId = useId();
+
+    const bonuses = Array.isArray(casinoBonuses) ? casinoBonuses : [casinoBonuses];
+
 
     return (
-        <div className={styles.offerItem}>
-            <div className={styles.offerItemHead}>
-                <div className={styles.offerRightSide}>
-                    <div className={styles.offerTitleContainer}>
-                        <img src={img} alt="Casino" />
-                        <Link className={styles.offerReview} to="/">Casino Joy Review</Link>
-                        <div className={styles.ratingContainer}>
-                            <span><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                                fill="#000000"
-                                height={24}
-                                width={24}
-                                version="1.1"
-                                id="Layer_1"
-                                viewBox="0 0 329.942 329.942"
-                                xmlSpace="preserve"
-                            >
-                                <path
-                                    id="XMLID_16_"
-                                    d="M329.208,126.666c-1.765-5.431-6.459-9.389-12.109-10.209l-95.822-13.922l-42.854-86.837
-      c-2.527-5.12-7.742-8.362-13.451-8.362c-5.71,0-10.925,3.242-13.451,8.362l-42.851,86.836l-95.825,13.922
-      c-5.65,0.821-10.345,4.779-12.109,10.209c-1.764,5.431-0.293,11.392,3.796,15.377l69.339,67.582L57.496,305.07
-      c-0.965,5.628,1.348,11.315,5.967,14.671c2.613,1.899,5.708,2.865,8.818,2.865c2.387,0,4.784-0.569,6.979-1.723l85.711-45.059
-      l85.71,45.059c2.208,1.161,4.626,1.714,7.021,1.723c8.275-0.012,14.979-6.723,14.979-15c0-1.152-0.13-2.275-0.376-3.352
-      l-16.233-94.629l69.339-67.583C329.501,138.057,330.972,132.096,329.208,126.666z"
-                                />
-                            </svg>
-                            </span> 5.0/5
-                        </div>
-                        <button className={styles.detailsButton} onClick={() => setOpen(o => !o)}>
-                            {open ? "Less Details" : "More Details"}
-                            <span className={open ? styles.iconUp : styles.iconDown} >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    enableBackground="new 0 0 32 32"
-                                    width={32}
-                                    height={32}
-                                    viewBox="0 0 32 24"
-                                    xmlSpace="preserve"
-                                >
-                                    <path
-                                        d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  
-       l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  
-       c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
-                                    />
-                                </svg>
-                            </span>
+        <article className={styles.card}>
+            <div className={styles.grid}>
+                {/* Left: big image/logo */}
+                <div className={styles.media}>
+                    <img className={styles.cover} src={img} alt="Casino cover" />
+                </div>
 
+                {/* Middle: content */}
+                <div className={styles.content}>
+                    <Link to="/" className={styles.title}>{reviewTitle}</Link>
+
+                    <div className={styles.hookRow}>
+                        <span className={styles.hook}>{casinoHook}</span>
+                        <span className={styles.rating}>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26 6.91.99-5 4.86 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.86 6.91-.99L12 2z" /></svg>
+                            5.0/5
+                        </span>
+                    </div>
+                    <div className={styles.bullets}>
+                        {bonuses.slice(0, 3).map((b, i) => b ? <p key={i}>{b}</p> : null)}
+                    </div>
+
+                    <div className={styles.actionsRow}>
+                        <button
+                            className={styles.moreBtn}
+                            onClick={() => setOpen(o => !o)}
+                            aria-expanded={open}
+                            aria-controls={detailsId}
+                        >
+                            More details
+                            <svg className={open ? styles.chevUp : styles.chevDown} viewBox="0 0 24 24">
+                                <path d="M7 14l5-5 5 5" />
+                            </svg>
                         </button>
                     </div>
-                    <div className={styles.bonusContainer}>
-                        <p className={styles.offerTag}>Casino Of The Month</p>
-                        <p className={styles.casinoHook}>{casinoHook}</p>
-                        <div className={styles.bonusList}>
-                            {casinoBonuses}
-                        </div>
+                </div>
+
+                {/* Right: CTA stack */}
+                <aside className={styles.ctaCol}>
+                    <div className={styles.ctaHighlight}>
+                        <div className={styles.ctaNum}>225%</div>
+                        <div className={styles.ctaNote}>up to $2,000</div>
                     </div>
-                </div>
-                <div className={styles.ctaSide}>
-                    <Link className={styles.offerLink} to={link}>CLAIM BONUS</Link>
-                    <p>18+ T&Cs apply</p>
-                </div>
+                    <Link to={link} className={styles.ctaBtn}>
+                        <span>Claim now</span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
+                    </Link>
+                    <span className={styles.tc}>18+ T&Cs apply</span>
+                </aside>
             </div>
-            <div className={`${styles.dashedLine}` + (open ? ` ${styles.show}` : ``)} />
-            <div className={`${styles.moreDetailsContainer} ${open ? styles.open : ""
-                }`}>
-                <div className={styles.infoContainer}>
-                    <h2>Additional Information</h2>
-                    <div className={styles.infoBox}>
-                        <p>Available in: </p>
-                        <p>Verified in: <span>July 2025</span></p>
-                        <p>Min Deposit: <span>$20</span></p>
-                        <p>Year Established: <span>2024</span></p>
-                        <p>Casino Games: <span>1900+</span></p>
-                        <p>Payout Speed: <span>4 Hours</span></p>
+
+            {/* Divider */}
+            <div className={styles.divider} />
+
+            {/* Dropdown – premium panel */}
+            <section id={detailsId} className={`${styles.details} ${open ? styles.open : ""}`}>
+                <div className={styles.detailGrid}>
+                    <div className={styles.infoCard}>
+                        <h3>Key facts</h3>
+                        <ul className={styles.specs}>
+                            <li><span>Available in</span><strong>EU</strong></li>
+                            <li><span>Verified</span><strong>July 2025</strong></li>
+                            <li><span>Min deposit</span><strong>$20</strong></li>
+                            <li><span>Established</span><strong>2024</strong></li>
+                            <li><span>Games</span><strong>1900+</strong></li>
+                            <li><span>Payout speed</span><strong>~ 4 hours</strong></li>
+                        </ul>
+                    </div>
+
+                    <div className={styles.infoCard}>
+                        <h3>Why we like it</h3>
+                        <ul className={styles.checks}>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg>Easy to navigate</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg>Alphabetical game sorting</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg>Sportsbook available</li>
+                        </ul>
+                        <Link to="/" className={styles.secondaryLink}>Read the full review</Link>
                     </div>
                 </div>
-                <div className={styles.infoContainer}>
-                    <h2>Our Verdict</h2>
-                    <div className={styles.infoBox}>
-                        <p>East-to-navigate website</p>
-                        <p>Games sorted alphabetically</p>
-                        <p>Also offers betting</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+            </section>
+        </article>
+    );
 };
 
 export default OfferItem;
