@@ -1,0 +1,119 @@
+.latestCasinoContainer {
+    margin: 50px auto 0;
+    max-width: 1460px;
+    width: 1460px;
+    max-height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    /* background: #000612; */
+    background-color: #280202;
+    padding: 30px;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.latestCasino {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.latestCasino img {
+    width: 100%;
+}
+
+.latestCasino h1 {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 13px;
+    margin-bottom: 22px;
+}
+
+.latestCasinoSummary {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.latestCasinoLink {
+    width: 100%;
+    text-align: right;
+    color: #00C7FF;
+    font-size: 15.31px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.topCasino {
+    width: 40%;
+}
+
+.topCasinoHeader {
+    color: #00FFC7;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.topCasinoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.topCasinoItem {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topCasinoText {
+    text-align: right;
+}
+
+.topCasinoNumber {
+    color: #FF3C00;
+    font-size: 47.844px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.topCasinoTitle {
+    font-size: 22.965px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.topCasinoSummary {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topCasinoLink {
+    color: #00C7FF;
+    font-size: 15.31px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.topCasinoImg {
+    width: 60%;
+    height: auto;
+}

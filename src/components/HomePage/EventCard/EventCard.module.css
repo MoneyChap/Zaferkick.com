@@ -1,0 +1,68 @@
+.featuredEvent {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventHeader {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.flexContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.eventImg {
+    width: 30%;
+}
+
+.eventImg img {
+    width: 100%;
+}
+
+.eventDescriptionContainer {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eventTitle {
+    margin: 0;
+    /* color: #FF3C00; */
+    color: #ff0000;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.eventSummary {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.eventLinkContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.eventLink {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 500;
+}

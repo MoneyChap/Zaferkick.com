@@ -1,0 +1,148 @@
+.heroSectionContainer {
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background: rgba(0, 6, 18, 0.7); */
+
+}
+
+.heroSection {
+    margin: 0 auto;
+    max-width: 1460px;
+    width: 1460px;
+    max-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.featuredOfferSection {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.featuredCasinoContainer {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+
+}
+
+.featuredItemsContainer {
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.featuredItem {
+    width: 100%;
+
+}
+
+.featuredItem img {
+    width: 100%;
+
+}
+
+.featuredEventsContainer {
+    border-radius: 10px;
+    width: 100%;
+    /* background: #001937; */
+    background-color: #111111;
+    height: 240px;
+    padding: 18px 22px 22px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroOfferWall {
+    width: 35%;
+    border-radius: 16px;
+    overflow: hidden;
+    /* background-color: rgb(0, 25, 55); */
+    background-color: #000000;
+}
+
+.dashedLine {
+    opacity: 0.3;
+    width: 100%;
+    height: 1px;
+    /* background: repeating-linear-gradient(to right, rgba(0, 199, 255, 0.7) 0, rgba(0, 199, 255, 0.7) 10px, transparent 10px, transparent 20px); */
+    background: repeating-linear-gradient(to right,
+            #ffffff 0,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 20px);
+}
+
+.featuredEvent {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventHeader {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+    color: #00C7FF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.flexContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.eventImg {
+    width: 30%;
+}
+
+.eventImg img {
+    width: 100%;
+}
+
+.eventDescriptionContainer {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eventTitle {
+    margin: 0;
+    color: #FF3C00;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.eventSummary {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.eventLinkContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #00C7FF;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.eventLink {
+    text-decoration: none;
+    color: #00C7FF;
+    margin: 0;
+    font-weight: 500;
+}

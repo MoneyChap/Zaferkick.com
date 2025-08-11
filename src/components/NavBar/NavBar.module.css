@@ -1,0 +1,120 @@
+.navBarContainer {
+    width: 100%;
+    background: #000000;
+    position: relative;
+    color: white;
+}
+
+.navBarUpperContainer {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.upper {
+    padding: 18px 0 18px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+}
+
+.leftLogo {
+    display: flex;
+    flex: 2;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.centerLogo {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 32px;
+}
+
+.centerLogo img {
+    width: 50px;
+}
+
+.userIcons {
+    flex: 2;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.navBarLowerContainer {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lower {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.lower a {
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: 0.2s;
+}
+
+.lower a:hover {
+    color: #ff0000;
+}
+
+.dashedLine {
+    position: relative;
+    opacity: 0.8;
+    width: 100%;
+    height: 1px;
+    background: repeating-linear-gradient(to right,
+            #f0014e 0,
+            #f0014e 10px,
+            transparent 10px,
+            transparent 20px);
+}
+
+.indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    border-radius: 2px;
+    pointer-events: none;
+
+    background: linear-gradient(90deg,
+            rgba(200, 0, 150, 1),
+            rgba(255, 20, 147, 1),
+            rgba(200, 0, 150, 1));
+    box-shadow: 0 0 8px rgba(255, 20, 147, 0.7);
+
+    /* only fade opacity on hover/unhover */
+    transition: opacity 0.2s ease;
+    opacity: 0;
+}

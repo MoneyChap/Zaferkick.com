@@ -1,0 +1,29 @@
+.offerSectionContainer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 1460px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offerTitleContainer {
+    color: white;
+}
+
+.offerTitleContainer h1 {
+    font-size: 50px;
+}
+
+.offerTitleContainer p {
+    font-size: 24px;
+}
+
+.bonusListContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90%;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
