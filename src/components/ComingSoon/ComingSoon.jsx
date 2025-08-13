@@ -53,7 +53,7 @@ const ComingSoon = () => {
                     </a>
                     <a href="https://tiktok.com/@ZaferKick" target="_blank" rel="noreferrer" className={styles.socialBtn}>
                         <div className={styles.iconContainer}>
-                            <svg
+                            <svg 
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
