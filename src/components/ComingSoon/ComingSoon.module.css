@@ -46,6 +46,8 @@
     flex-wrap: wrap;
     gap: 14px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .socialBtn {
@@ -57,6 +59,16 @@
     text-decoration: none;
     transition: transform 0.2s ease;
     box-shadow: 0 0 0 1px var(--glow), 0 4px 14px rgba(240, 1, 78, 0.3);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.socialBtn p {
+    margin: 0;
+    padding: 0;
 }
 
 .socialBtn:hover {
@@ -73,11 +85,6 @@
     height: auto;
 }
 
-.socialBtn img {
-    width: 100%;
-    height: auto;
-}
-
 /* Mobile */
 @media (max-width: 480px) {
     .title {
@@ -89,7 +96,6 @@
     }
 
     .socialBtn {
-        flex: 1 1 100%;
-        text-align: center;
+        width: 80%;
     }
 }

@@ -28,7 +28,9 @@ const ComingSoon = () => {
                                     fill="#ffffff"
                                 />
                             </svg>
+
                         </div>
+                        <p>Telegram</p>
                     </a>
                     <a href="https://www.instagram.com/zaferkick" target="_blank" rel="noreferrer" className={styles.socialBtn}>
                         <div className={styles.iconContainer}>
@@ -47,6 +49,7 @@ const ComingSoon = () => {
                                 </g>
                             </svg>
                         </div>
+                        <p>Instagram</p>
                     </a>
                     <a href="https://tiktok.com/@ZaferKick" target="_blank" rel="noreferrer" className={styles.socialBtn}>
                         <div className={styles.iconContainer}>
@@ -62,6 +65,7 @@ const ComingSoon = () => {
                                 />
                             </svg>
                         </div>
+                        <p>TikTok</p>
                     </a>
                     {/* <a href="https://youtube.com/@yourchannel" target="_blank" rel="noreferrer" className={styles.socialBtn}>
                         <div className={styles.iconContainer}>
