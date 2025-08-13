@@ -4,14 +4,19 @@ import styles from "./BetOfTheDay.module.css";
 import leagueLogo from "../../../assets/zklogo.jpg";
 import galatasarayLogo from "../../../assets/galataskaray.svg";
 import fenerbahceLogo from "../../../assets/Fenerbahce.svg";
+import trabzonsporLogo from "../../../assets/Trabzonspor.svg";
+import kocaelisporLogo from "../../../assets/kocaelispor.svg";
+import feyenoordLogo from "../../../assets/feyenoord.svg";
+import basaksehirLogo from "../../../assets/İstanbul_Başakşehir_logo.svg.png";
+import vikingfkLogo from "../../../assets/Viking_FK_logo_2020.svg.png";
 import bg from "../../../assets/SoccerBG.png";
 
 const BetOfTheDay = () => {
     // you can wire these to real data later
-    const date = "10 May";
-    const time = "17:00";
-    const home = { name: "Galatasaray", logo: galatasarayLogo };
-    const away = { name: "Fenerbahçe", logo: fenerbahceLogo };
+    const date = "13 Aug";
+    const time = "19:00";
+    const home = { name: "Basaksehir", logo: basaksehirLogo };
+    const away = { name: "Viking FK", logo: vikingfkLogo };
     const pick = home;            // chosen team
     const confidence = 78;        // 0–100
 
@@ -80,8 +85,9 @@ const BetOfTheDay = () => {
                     <div className={styles.pickLeft}>
                         <span className={styles.pickLabel}>Pick</span>
                         <div className={styles.pickTeam}>
-                            <img src={pick.logo} alt={`${pick.name} logo`} />
-                            <span className={styles.pickName}>{pick.name}</span>
+                            {/* <img src={pick.logo} alt={`${pick.name} logo`} /> */}
+                            {/* <span className={styles.pickName}>{pick.name}</span> */}
+                            <span className={styles.pickName}>OVER 2.5</span>
                         </div>
                     </div>
 

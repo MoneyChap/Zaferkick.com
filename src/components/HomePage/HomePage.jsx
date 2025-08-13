@@ -9,6 +9,7 @@ import EventCard from "./EventCard/EventCard";
 import TopCasinos from "./TopCasinos/TopCasinos";
 import OfferSection from "./OfferSection/OfferSection";
 import BetOfTheDay from "./BetOfTheDay/BetOfTheDay";
+import FAQ from "./FAQ/FAQ";
 
 const events = [
     {
@@ -92,6 +93,7 @@ const HomePage = (props) => {
             </section>
             <BetOfTheDay />
             <OfferSection />
+            <FAQ />
         </div>
     )
 };

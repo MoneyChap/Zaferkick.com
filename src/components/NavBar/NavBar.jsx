@@ -93,7 +93,7 @@ const NavBar = (props) => {
                     <Link>CASINOS</Link>
                     <Link>CASINO BONUSES</Link>
                     <Link>BLOG</Link>
-                    <Link>MATCHES</Link>
+                    <Link>BET OF THE DAY</Link>
                     <Link>FAQ</Link>
                 </nav>
             </div>
