@@ -13,7 +13,7 @@ import bg from "../../../assets/SoccerBG.png";
 
 const BetOfTheDay = () => {
     // you can wire these to real data later
-    const date = "13 Aug";
+    const date = "13 Aug"; 
     const time = "19:00";
     const home = { name: "Basaksehir", logo: kocaelisporLogo };
     const away = { name: "Viking FK", logo: feyenoordLogo };
