@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./BetOfTheDay.module.css";
 
 import leagueLogo from "../../../assets/zklogo.jpg";
@@ -20,7 +20,7 @@ const BetOfTheDay = () => {
     // const pick = home;            // chosen team
     const confidence = 78;        // 0–100
 
-    const BET_DURATION = 24 * 60 * 60 * 1000; // ms
+    // const BET_DURATION = 24 * 60 * 60 * 1000; // ms
     // const [remaining, setRemaining] = useState(BET_DURATION);
 
     // useEffect(() => {
