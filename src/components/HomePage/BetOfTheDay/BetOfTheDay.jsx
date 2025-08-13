@@ -17,30 +17,30 @@ const BetOfTheDay = () => {
     const time = "19:00";
     const home = { name: "Basaksehir", logo: kocaelisporLogo };
     const away = { name: "Viking FK", logo: feyenoordLogo };
-    const pick = home;            // chosen team
+    // const pick = home;            // chosen team
     const confidence = 78;        // 0–100
 
     const BET_DURATION = 24 * 60 * 60 * 1000; // ms
-    const [remaining, setRemaining] = useState(BET_DURATION);
+    // const [remaining, setRemaining] = useState(BET_DURATION);
 
-    useEffect(() => {
-        const startTime = Date.now();
-        const timer = setInterval(() => {
-            const elapsed = Date.now() - startTime;
-            const left = BET_DURATION - (elapsed % BET_DURATION);
-            setRemaining(left);
-        }, 1000);
+    // useEffect(() => {
+    //     const startTime = Date.now();
+    //     const timer = setInterval(() => {
+    //         const elapsed = Date.now() - startTime;
+    //         const left = BET_DURATION - (elapsed % BET_DURATION);
+    //         setRemaining(left);
+    //     }, 1000);
 
-        return () => clearInterval(timer);
-    }, []);
+    //     return () => clearInterval(timer);
+    // }, []);
 
-    const formatTime = (ms) => {
-        const totalSeconds = Math.floor(ms / 1000);
-        const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
-        const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
-        const seconds = String(totalSeconds % 60).padStart(2, "0");
-        return `${hours}:${minutes}:${seconds}`;
-    };
+    // const formatTime = (ms) => {
+    //     const totalSeconds = Math.floor(ms / 1000);
+    //     const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+    //     const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+    //     const seconds = String(totalSeconds % 60).padStart(2, "0");
+    //     return `${hours}:${minutes}:${seconds}`;
+    // };
 
     return (
         <section className={styles.section}>
@@ -105,7 +105,7 @@ const BetOfTheDay = () => {
                 </div>
 
                 <footer className={styles.footer}>
-                    <span className={styles.next}>Next prediction in {formatTime(remaining)}</span>
+                    <span className={styles.next}>Next prediction in </span>
                 </footer>
             </article>
         </section>
