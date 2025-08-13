@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./HomePage.module.css";
 import firstOffer from "../../assets/BachaFreerollV2_EN.jpg";
 import secondOffer from "../../assets/EWU_WebBanner25_EN.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import CasinoOffer from "./CasinoOffer/CasinoOffer";
 import Carousel from "./Carousel/Carousel";
 import EventCard from "./EventCard/EventCard";

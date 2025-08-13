@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./ComingSoon.module.css";
 import logo from "../../assets/zklogo.jpg";
-import instagramLogo from "../../assets/instagramlogo.svg";
 
 const ComingSoon = () => {
     return (

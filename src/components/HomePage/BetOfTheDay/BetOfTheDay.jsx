@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./BetOfTheDay.module.css";
 
 import leagueLogo from "../../../assets/zklogo.jpg";
-import galatasarayLogo from "../../../assets/galataskaray.svg";
-import fenerbahceLogo from "../../../assets/Fenerbahce.svg";
-import trabzonsporLogo from "../../../assets/Trabzonspor.svg";
+// import galatasarayLogo from "../../../assets/galataskaray.svg";
+// import fenerbahceLogo from "../../../assets/Fenerbahce.svg";
+// import trabzonsporLogo from "../../../assets/Trabzonspor.svg";
 import kocaelisporLogo from "../../../assets/kocaelispor.svg";
 import feyenoordLogo from "../../../assets/feyenoord.svg";
 // import basaksehirLogo from "../../../assets/İstanbul_Başakşehir_logo.png";
