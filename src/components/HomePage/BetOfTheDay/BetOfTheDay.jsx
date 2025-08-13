@@ -7,8 +7,8 @@ import fenerbahceLogo from "../../../assets/Fenerbahce.svg";
 import trabzonsporLogo from "../../../assets/Trabzonspor.svg";
 import kocaelisporLogo from "../../../assets/kocaelispor.svg";
 import feyenoordLogo from "../../../assets/feyenoord.svg";
-import basaksehirLogo from "../../../assets/İstanbul_Başakşehir_logo.svg.png";
-import vikingfkLogo from "../../../assets/Viking_FK_logo_2020.svg.png";
+import basaksehirLogo from "../../../assets/İstanbul_Başakşehir_logo.png";
+import vikingfkLogo from "../../../assets/Viking_FK_logo_2020.png";
 import bg from "../../../assets/SoccerBG.png";
 
 const BetOfTheDay = () => {
