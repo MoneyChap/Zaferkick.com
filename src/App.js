@@ -11,13 +11,13 @@ function App() {
     <Router>
       <section className={styles.appContainer}>
         <Routes>
-          <Route path="" element={<>
+          <Route path="/f" element={<>
             <NavBar />
             <HomePage />
             <Footer />
           </>} />
           {/* <Route path="/home" element={<HomePage />} /> */}
-          <Route path="/f" element={<ComingSoon />} />
+          <Route path="/" element={<ComingSoon />} />
           {/* <Route path="/home" element={<Footer />} /> */}
         </Routes>
 
