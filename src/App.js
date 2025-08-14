@@ -17,7 +17,7 @@ function App() {
             <Footer />
           </>} />
           {/* <Route path="/home" element={<HomePage />} /> */}
-          <Route path="" element={<ComingSoon />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
           {/* <Route path="/home" element={<Footer />} /> */}
         </Routes>
 
