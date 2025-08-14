@@ -11,10 +11,10 @@ function App() {
     <Router>
       <section className={styles.appContainer}>
         <Routes>
-          <Route path="home" element={<NavBar />} />
-          <Route path="home" element={<HomePage />} />
+          <Route path="/home" element={<NavBar />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="" element={<ComingSoon />} />
-          <Route path="home" element={<Footer />} />
+          <Route path="/home" element={<Footer />} />
         </Routes>
 
       </section>
