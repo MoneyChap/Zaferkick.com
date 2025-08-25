@@ -1,6 +1,5 @@
 .appContainer {
-  width: 100vw;
+  max-width: 100vw;
   background-color: #0000006c;
-  /* background: rgba(0, 6, 18, 0.7); */
-  /* height: 100vh; */
+  /* overflow: auto; */
 }

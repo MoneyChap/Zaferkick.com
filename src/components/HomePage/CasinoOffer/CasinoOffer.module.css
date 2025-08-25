@@ -140,3 +140,38 @@
     text-decoration: none;
     transition: all 0.2s ease;
 }
+
+@media (max-width: 504px) {
+
+    .bonusContainer div {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 463px) {
+
+    .bonusContainer div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 438px) {
+
+    .bonusContainer div {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .bonusContainer div {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 402px) {
+
+    .bonusContainer div {
+        font-size: 8px;
+    }
+}

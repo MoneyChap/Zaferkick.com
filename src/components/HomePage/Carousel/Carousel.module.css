@@ -1,17 +1,20 @@
-/* NEW */
 .wrapper {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
-/* moved former .carousel rules here */
 .viewport {
     position: relative;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
+    max-height: 100%;
+    /* Allow dynamic height up to parent */
 }
 
-/* unchanged */
 .track {
     display: flex;
     will-change: transform;
@@ -28,34 +31,35 @@
 .slide {
     flex: 0 0 auto;
     width: 100%;
+    min-height: 0;
+    /* Allow natural height based on content */
+    display: flex;
+    flex-direction: column;
 }
 
 .viewport img {
     width: 100%;
     height: auto;
+    /* Adjusted to auto for content-driven height */
+    object-fit: cover;
     display: block;
     pointer-events: none;
     -webkit-user-drag: none;
     user-select: none;
 }
 
-/* dots base styles */
 .dots {
     display: flex;
     gap: 8px;
+    padding: 8px 0;
 }
 
-/* BELOW variant */
 .dotsBelow {
     justify-content: center;
     margin-top: 12px;
     position: static;
     transform: none;
 }
-
-/* keep old inside style if you ever need it
-  .dotsInside { position:absolute; bottom:12px; left:50%; transform:translateX(-50%); }
-  */
 
 .dot {
     width: 42px;
@@ -65,9 +69,49 @@
     border-radius: 2px;
     padding: 0;
     cursor: pointer;
-    transition: background .2s ease;
+    transition: background 0.2s ease;
 }
 
 .dot.active {
     background: rgb(255, 0, 0);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 8px;
+    }
+
+    .viewport {
+        border-radius: 8px;
+    }
+
+    .dot {
+        width: 32px;
+        height: 3px;
+    }
+
+    .dots {
+        gap: 6px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 0 4px;
+    }
+
+    .viewport {
+        border-radius: 6px;
+    }
+
+    .dot {
+        width: 24px;
+        height: 3px;
+    }
+
+    .dots {
+        gap: 4px;
+        margin-top: 6px;
+    }
 }

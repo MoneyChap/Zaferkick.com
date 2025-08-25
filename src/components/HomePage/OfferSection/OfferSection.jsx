@@ -64,7 +64,7 @@ const OfferSection = (props) => {
     ];
 
     return (
-        <section className={styles.offerSectionContainer}>
+        <section id="bonuses" className={styles.offerSectionContainer}>
             <div className={styles.offerSection}>
                 <div className={styles.offerTitleContainer}>
                     <h1>THE ULTIMATE BONUS LINEUP</h1>

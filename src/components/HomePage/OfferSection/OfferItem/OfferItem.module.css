@@ -1,4 +1,4 @@
-:root {
+.card {
     --bg: #0c0c0f;
     --card: #111113;
     --stroke: rgba(255, 255, 255, .08);
@@ -10,12 +10,13 @@
     --accent1: #F0014E;
     --accent2: #8A002D;
 
-    --glow: rgba(240, 1, 78, .45);
+    /* --glow: rgba(245, 24, 24, 0.3); */
     --chip: linear-gradient(180deg, #ff7b32 0%, #b62a12 100%);
 }
 
 /* container */
 .card {
+    box-sizing: border-box;
     width: 100%;
     color: var(--text);
     background:
@@ -98,7 +99,7 @@
     text-align: left;
     margin: 0;
     padding: 0;
-    
+
 }
 
 .actionsRow {
@@ -189,12 +190,14 @@
     color: #fff;
     font-weight: 900;
     text-transform: uppercase;
-    background:
+    /* background:
         radial-gradient(120% 120% at 30% 0%, rgba(255, 255, 255, .18), transparent 60%),
-        linear-gradient(180deg, var(--accent1) 65%, var(--accent2));
+        linear-gradient(180deg, var(--accent1) 65%, var(--accent2)); */
+    background: linear-gradient(180deg, #f51818 0%, #761010 100%);
     border: 1px solid rgba(0, 0, 0, .35);
-    box-shadow: 0 10px 24px var(--glow), inset 0 1px 0 rgba(255, 255, 255, .25);
+    box-shadow: 0 10px 24px rgba(245, 24, 24, 0.3), inset 0 1px 0 rgba(255, 255, 255, .25);
     letter-spacing: .3px;
+    transition: .3s;
 }
 
 .ctaBtn svg {
@@ -207,7 +210,7 @@
 
 .ctaBtn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 14px 32px var(--glow);
+    box-shadow: 0 14px 32px rgba(245, 24, 24, 0.3);
 }
 
 .tc {

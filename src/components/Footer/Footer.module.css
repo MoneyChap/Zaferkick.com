@@ -139,13 +139,16 @@
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, .35);
-    background: linear-gradient(180deg, var(--accent1) 65%, var(--accent2));
+    border: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.349); */
+    /* background: linear-gradient(180deg, var(--accent1) 65%, var(--accent2)); */
+    background: linear-gradient(180deg, #f51818 0%, #761010 100%);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 24px var(--glow), inset 0 1px 0 rgba(255, 255, 255, .25);
+    /* box-shadow: 0 10px 24px var(--glow), inset 0 1px 0 rgba(255, 255, 255, .25); */
+    box-shadow: 0 5px 12px rgba(245, 24, 24, 0.3), inset 0 1px 0 rgba(255, 255, 255, .25); /* Adjusted shadow */
     cursor: pointer;
     opacity: 0;
     transform: translateY(10px);

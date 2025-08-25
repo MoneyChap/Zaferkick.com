@@ -43,7 +43,7 @@ const BetOfTheDay = () => {
     // };
 
     return (
-        <section className={styles.section}>
+        <section id="betoftheday" className={styles.section}>
             <h1 className={styles.title}>Bet of the day</h1>
 
             <article className={styles.card}>

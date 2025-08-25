@@ -66,3 +66,101 @@
     margin: 0;
     font-weight: 500;
 }
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .eventTitle {
+        font-size: 28px;
+    }
+
+    .eventSummary {
+        font-size: 14px;
+    }
+
+    .eventHeader {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    .eventImg {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    .eventDescription {
+        margin-bottom: 8px;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .eventDescriptionContainer {
+        width: 100%;
+    }
+
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .eventTitle {
+        font-size: 24px;
+    }
+
+    .eventSummary {
+        font-size: 14px;
+    }
+
+    .eventHeader {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .eventImg {
+        margin-bottom: 10px;
+    }
+
+    .eventDescription {
+        margin-bottom: 10px;
+    }
+
+    .eventLinkContainer {
+        font-size: 12px;
+    }
+}
+
+/* Very small screens (preserving current mobile layout) */
+@media (max-width: 480px) {
+    .eventTitle {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .eventSummary {
+        font-size: 16px;
+    }
+
+    .eventHeader {
+        font-size: 16px;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .eventImg {
+        margin-bottom: 8px;
+    }
+
+    .eventDescription {
+        margin-bottom: 8px;
+    }
+
+    .eventLinkContainer {
+        flex-direction: row;
+        gap: 5px;
+        font-size: 16px;
+    }
+
+    .eventLinkContainer p {
+        font-size: 14px;
+    }
+}

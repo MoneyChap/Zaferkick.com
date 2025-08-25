@@ -47,20 +47,18 @@ const Footer = () => {
                 <div className={styles.meta}>
                     <p>Copyright © {year} — Zaferkick Entertainment Ltd. All rights reserved.</p>
                     <p>126 East Ferry Road, Canary Wharf, London, E14 9FP, United Kingdom</p>
-                    <div className={styles.cards}>
-                        {/* Mastercard */}
+                    {/* <div className={styles.cards}>
                         <svg viewBox="0 0 64 40" className={styles.cardIcon} aria-label="Mastercard">
                             <rect x="1" y="1" width="62" height="38" rx="6" ry="6" fill="none" stroke="currentColor" opacity=".25" />
                             <circle cx="26" cy="20" r="10" fill="#EA001B" />
                             <circle cx="38" cy="20" r="10" fill="#F79E1B" />
                             <path d="M31 10a10 10 0 0 0 0 20a10 10 0 0 0 0-20z" fill="#FF5F00" />
                         </svg>
-                        {/* Visa */}
                         <svg viewBox="0 0 64 40" className={styles.cardIcon} aria-label="Visa">
                             <rect x="1" y="1" width="62" height="38" rx="6" ry="6" fill="none" stroke="currentColor" opacity=".25" />
                             <text x="32" y="26" textAnchor="middle" fontSize="16" fontWeight="800" fill="currentColor">VISA</text>
                         </svg>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
